@@ -15,26 +15,26 @@ Este repositório documenta a conclusão do desafio prático de **Gerenciamento 
 ## 🛠️ Passo a Passo da Implementação
 
 ### 1. Criação do Par de Chaves (Key Pair)
-Iniciei o processo criando a chave de segurança `chavee-dio` no formato `.pem`, essencial para garantir o acesso criptografado ao servidor.
-![Key Pair](./key_pair.png)
+Iniciei o processo criando a chave de segurança `chavee-dio` no formato `.pem`.
+![Key Pair](./key-pair.png)
 
 ### 2. Configurações de Rede e Segurança
-Configurei o Security Group para permitir o tráfego SSH. Por boas práticas de segurança, restringi o acesso apenas ao meu endereço IP atual (`191.187.132.0/32`).
-![Network Settings](./network_settings.png)
+Configurei o Security Group para permitir o tráfego SSH, restringindo o acesso apenas ao meu endereço IP atual.
+![Network Settings](./network-settings.png)
 
 ### 3. Lançamento da Instância
-O processo de lançamento foi iniciado com sucesso, provisionando a infraestrutura necessária na nuvem da AWS.
+O processo de lançamento foi concluído com sucesso, provisionando a infraestrutura na nuvem da AWS.
 ![Launching](./launching.png)
 ![Success](./success.png)
 
 ### 4. Conexão e Acesso ao Terminal
-Após a inicialização, utilizei o **EC2 Instance Connect** para acessar o terminal. Consegui interagir com o sistema operacional Amazon Linux 2023 diretamente pelo navegador.
+Após a inicialização, utilizei o **EC2 Instance Connect** para acessar o terminal e interagir com o sistema operacional Amazon Linux 2023.
 ![Terminal](./terminal.png)
 
 ## 💡 Insights e Aprendizados
-1. **Segurança Restritiva:** Aprendi que restringir o acesso SSH apenas ao meu IP reduz drasticamente a superfície de ataque do servidor.
-2. **Gerenciamento de Recursos:** Entendi a importância de acompanhar os logs de lançamento e confirmar o status da instância antes de tentar a conexão.
-3. **Praticidade do Cloud:** A capacidade de subir um servidor funcional em minutos demonstra o poder da computação em nuvem para escalabilidade.
+1. **Segurança:** A importância de restringir portas de acesso (SSH) apenas para IPs autorizados.
+2. **Praticidade:** A agilidade em subir um servidor configurado e pronto para uso em minutos.
+3. **Documentação:** O uso do GitHub para registrar processos técnicos de forma estruturada.
 
 ---
 *Projeto realizado para a Formação AWS da DIO.*
